@@ -27,7 +27,7 @@ namespace DatabasLab3.Methods
             Console.WriteLine("Personnummer (12 siffror): ");
             string personalNumber = Console.ReadLine();
 
-            var newPersonnel = new Person
+            var newPersonnel = new Person //skapar nytt personobjekt som sedan ska skickas in i databasen
             {
                 FirstName = firstName,
                 LastName = lastName,

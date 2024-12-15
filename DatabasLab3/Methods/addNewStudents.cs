@@ -24,7 +24,7 @@ namespace DatabasLab3.Methods
             Console.Write("Personnummer (12 siffror): ");
             string personalNumber = Console.ReadLine();
 
-            var newStudent = new Person
+            var newStudent = new Person  //skapar nytt objekt som ska skickas in i databasen
             {
                 FirstName = firstName,
                 LastName = lastName,
@@ -36,7 +36,7 @@ namespace DatabasLab3.Methods
             try
             {
                 highschoolContext.People.Add(newStudent);
-                highschoolContext.SaveChanges();
+                highschoolContext.SaveChanges();  //skickar in i databasen
 
                 Console.WriteLine("Eleven är Tillagd i databasen");
 
