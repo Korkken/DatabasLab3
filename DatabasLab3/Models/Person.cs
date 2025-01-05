@@ -20,4 +20,5 @@ public partial class Person
     public virtual ICollection<Class> Classes { get; set; } = new List<Class>();
 
     public virtual ICollection<Class> ClassesNavigation { get; set; } = new List<Class>();
+
 }

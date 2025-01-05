@@ -12,9 +12,10 @@ getAverageGrade getAverageGrade = new getAverageGrade();
 getStudentClasses getStudentClasses = new getStudentClasses();
 addNewPersonnel addNewPersonnel = new addNewPersonnel();
 addNewStudents addNewStudents = new addNewStudents();
-
+GetCourses getCourses = new GetCourses();
+addGrades addGrades = new addGrades();
 Console.WriteLine("Vad skulle du vilja göra?\n 1. Hämta personer\n 2. Hämta elever\n 3. Hämta senaste betygen\n 4. Hämta genomsnittliga betygen\n" +
-    " 5. Hämta klasser\n 6. Lägg till ny personal\n 7. Lägg till ny elev");
+    " 5. Hämta klasser\n 6. Lägg till ny personal\n 7. Lägg till ny elev \n 8. Hämta Lärare \n 9. Sätt betyg på någon elev.(funkar ej men lämnade kvar koden)");
 var input = 0;
 int.TryParse(Console.ReadLine(), out input);
 
@@ -41,6 +42,14 @@ switch(input)
     case 7:
         addNewStudents.AddNewStudent();
         break;
+    case 8:
+        getCourses.getCourses();
+        break;
+    case 9:
+        addGrades.AddGrades();
+        break;
+
+
 }
 
 

@@ -10,4 +10,5 @@ public partial class Course
     public string? CourseName { get; set; }
 
     public string? Description { get; set; }
+    public string? Activity {  get; set; }
 }
